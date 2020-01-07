@@ -1,0 +1,85 @@
+    [
+        {
+    "name": "Finding Carter",
+    "adress": "https://www.imdb.com/title/tt3186138/" ,
+    "img": "https://m.media-amazon.com/images/M/MV5BMTk0ODI5MTM0Nl5BMl5BanBnXkFtZTgwNDcyNjc5NjE@._V1_UY268_CR0,0,182,268_AL_.jpg"},
+    {
+    "name": "Faking it",
+    "adress": "https://www.imdb.com/title/tt3127020/?ref_=fn_al_tt_1" ,
+    "img": "https://m.media-amazon.com/images/M/MV5BYzEyMDBmMDQtOGMwMC00ODg4LWJjZDgtMjA4ZmRkMzI2NGM1XkEyXkFqcGdeQXVyMTkzODUwNzk@._V1_UX182_CR0,0,182,268_AL_.jpg"},
+    {
+        "name": "Amy Winehouse",
+        "adress": "https://www.imdb.com/title/tt2870648/?ref_=fn_al_tt_2",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTQ1MzE4MTE3OF5BMl5BanBnXkFtZTgwOTcyNDM3NTE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Life with Judy Garland: Me and My Shadows ",
+        "adress": "https://www.imdb.com/title/tt0250581/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTU1Mzg0OTg3NV5BMl5BanBnXkFtZTcwNTc1NzMyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "No Direction Home: Bob Dylan  ",
+        "adress": "https://www.imdb.com/title/tt0367555/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTY3MjIyNTAzMF5BMl5BanBnXkFtZTgwODAyMjg5MjE@._V1_UY268_CR9,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Shake, Rattle and Rock! (1994)",
+        "adress": "https://www.imdb.com/title/tt0111147/?ref_=nv_sr_7?ref_=nv_sr_7",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjA5Nzg2Mzg1N15BMl5BanBnXkFtZTcwMjUwODkxMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Steve Jobs: The Man in the Machine (2015)",
+        "adress": "https://www.imdb.com/title/tt4425064/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTUwMzAyMjgyNV5BMl5BanBnXkFtZTgwOTU3ODUzNjE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Stolen Summer (2002)",
+        "adress": "https://www.imdb.com/title/tt0286162/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjAyMDIyMjg2Nl5BMl5BanBnXkFtZTcwNzE1MzMyMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Swingers (1996)",
+        "adress": "https://www.imdb.com/title/tt0117802/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BZjg1ZmViMmEtYzIxNi00MzJlLTk4MDktNTE2ZDkwMzEyMjBhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Zulu Dawn (1979)",
+        "adress": "https://www.imdb.com/title/tt0080180/",
+        "img": "https://m.media-amazon.com/images/M/MV5BY2M0MjY2NjktMTcwMi00MzZlLWFhMTctY2JmNzc2MjgzYTFiXkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Attack of the Killer Tomatoes! (1978)",
+        "adress": "https://www.imdb.com/title/tt0080391/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BZWMxOTEzMjktYjE3NC00NmZjLThlNzYtMDE3MDlmNWVmZTZkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Ernest Scared Stupid (1991)",
+        "adress": "https://www.imdb.com/title/tt0101821/?ref_=nv_sr_2?ref_=nv_sr_2",
+        "img": "https://m.media-amazon.com/images/M/MV5BZDA4MzIxY2EtYzQxMy00MmJkLWI1ODktNzFjMDM0Yzg4YjhlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Ernest Goes to Jail (1990)",
+        "adress": "https://www.imdb.com/title/tt0099512/?ref_=nv_sr_2?ref_=nv_sr_2",
+        "img": "https://m.media-amazon.com/images/M/MV5BYTU3MzYyYTEtYWI1NS00MTJlLWE3NDMtYzI4ODUzMGY1ODk1XkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Ernest Saves Christmas (1988)",
+        "adress": "https://www.imdb.com/title/tt0095107/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjI3ZGE5MTMtOTk4Ny00ZWUyLTgyMzctZjRkZDMzZWY3ZWFhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Ernest Goes to Camp (1987)",
+        "adress": "https://www.imdb.com/title/tt0092974/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BNjQxOTFmNmItMDk1Ni00NTk3LTk0N2MtNmU4OGE5NDIzYjJmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Pride (2004)",
+        "adress": "https://www.imdb.com/title/tt0363908/",
+        "img": "https://m.media-amazon.com/images/M/MV5BMTI1Nzk3NTM2OF5BMl5BanBnXkFtZTcwODg5MTYyMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg"
+    },
+    {
+        "name": "Hunt for the Wilderpeople (2016)",
+        "adress": "https://www.imdb.com/title/tt4698684/?ref_=nv_sr_1?ref_=nv_sr_1",
+        "img": "https://m.media-amazon.com/images/M/MV5BMjI1MDQ2MDg5Ml5BMl5BanBnXkFtZTgwMjc2NjM5ODE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+    }    
+    ]

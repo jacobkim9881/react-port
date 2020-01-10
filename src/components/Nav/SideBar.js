@@ -9,6 +9,8 @@ import styled from 'styled-components'
 import About from '../About'
 import Skills from '../Skills'
 import MovieList from '../MovieList'
+import UserInfo from '../UserInfo'
+import Blog from '../Blog'
 
 class SideBar extends Component {
     render() {
@@ -28,6 +30,12 @@ class SideBar extends Component {
             <li>
               <Link to="/list">Movie Lists</Link>
             </li>
+            <li>
+              <Link to="/users">User Information</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blogs</Link>
+            </li>
           </Ul>
         </Nav>
 
@@ -40,6 +48,12 @@ class SideBar extends Component {
           </Route>
           <Route path="/list">
             <MovieList />
+          </Route>
+          <Route path="/users">
+            <UserInfo />
+          </Route>
+          <Route path="/blog">
+            <Blog />
           </Route>
         </Switch>
         </div>

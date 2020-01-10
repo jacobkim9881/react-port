@@ -19,22 +19,22 @@ class SideBar extends Component {
           <Nav>
           <Ul>
             <li>
-              <Link to="/">Home</Link>        
+              <StyledLink to="/">Home</StyledLink>        
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <StyledLink to="/about">About</StyledLink>
             </li>
             <li>
-              <Link to="/skills">Skills</Link>
+              <StyledLink to="/skills">Skills</StyledLink>
             </li>
             <li>
-              <Link to="/list">Movie Lists</Link>
+              <StyledLink to="/list">Movie Lists</StyledLink>
             </li>
             <li>
-              <Link to="/users">User Information</Link>
+              <StyledLink to="/users">User Information</StyledLink>
             </li>
             <li>
-              <Link to="/blog">Blogs</Link>
+              <StyledLink to="/blog">Blogs</StyledLink>
             </li>
           </Ul>
         </Nav>
@@ -71,6 +71,16 @@ const Nav = styled.nav`
   display: block;
   background-color: hsl(201, 36%, 50%);
   position: fixed;
+`
+const StyledLink = styled(Link)`
+font-size: 20px;
+text-decoration: none;
+&:visited {
+  color: black;
+}
+&:hover {
+  color: red;
+}
 `
 
 export default SideBar;

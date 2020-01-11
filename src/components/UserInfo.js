@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import { Main } from '../Css'
 
 import axios from 'axios'
 const API_URL = 'http://jsonplaceholder.typicode.com';

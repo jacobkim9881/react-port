@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Main } from '../Css'
-import styled from 'styled-components'
 
 class Skills extends Component {
     render() {
@@ -12,17 +11,13 @@ class Skills extends Component {
                 Framework : React.js <br/>
                 How to update this website : Git <br/>
                 Deployed at : Netlify <br/>
-                React Stack : 
-                <Indent>  Axios<br/>
-                  styled-component
-                </Indent>
+                React Stack :<br/> 
+                    Axios<br/>   
+                    styled-component<br/>    
+                    React-route<br/> 
             </Main>
         ); 
     }
 }
 
 export default Skills;
-
-const Indent = styled.p`
-text-indent: 25px;
-`

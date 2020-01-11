@@ -11,6 +11,7 @@ import Skills from '../Skills'
 import MovieList from '../MovieList'
 import UserInfo from '../UserInfo'
 import Blog from '../Blog'
+import Test from '../Test'
 
 class SideBar extends Component {
     render() {
@@ -36,6 +37,9 @@ class SideBar extends Component {
             <li>
               <StyledLink to="/blog">Blogs</StyledLink>
             </li>
+            <li>
+              <StyledLink to="/test">Test</StyledLink>
+            </li>
           </Ul>
         </Nav>
 
@@ -54,6 +58,9 @@ class SideBar extends Component {
           </Route>
           <Route path="/blog">
             <Blog />
+          </Route>
+          <Route path="/test">
+            <Test />
           </Route>
         </Switch>
         </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
 import { Main } from '../Css'
 
 class About extends Component {

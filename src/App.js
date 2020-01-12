@@ -4,6 +4,8 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import SideBar from './components/Nav/SideBar'
 
 class App extends Component {

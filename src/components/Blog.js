@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Main } from '../Css'
 import styled from 'styled-components'
+import Accordion from 'react-bootstrap/Accordion'
 
 class Blog extends Component {
     state = {
@@ -21,7 +22,7 @@ class Blog extends Component {
                 {this.state.blogs.map(post =>
                     <Post>
                         <h2>{post.title}</h2>
-                        <div><p>{post.body}</p></div>    
+                        <div><p>{post.body}{post.key}</p></div>    
                     </Post>    
                     )}
             </ul>

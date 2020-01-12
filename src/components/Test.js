@@ -1,48 +1,58 @@
 import React, { Component } from 'react';
 import { Main } from '../Css'
-import Toggle from './utilities/Toggle'
-import Test1 from './Test1'
-
 class Test extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            isToggledOn: false,
-            ranNum: "",
-            otherRanNum: ""
+            input: "",
+            answer: false
         }
+        this.getText = this.getText.bind(this);
+    }
 
-        this.handleClick = this.handleClick.bind(this);
-        this.saveNumber = this.saveNumber.bind(this);
-    }
-    
-    handleClick() {
-        this.setState(state => ({
-            isToggledOn: !state.isToggledOn
-        }));
-    }
-    
-    saveNumber() {
+    getText() {
         this.setState({
-            ranNum: Math.trunc(
-                Math.random()*7
-            ),
-            otherRanNum: Math.trunc(
-                Math.random()*7
-            )
+            input: event.target.value
         });
     }
-    
+
+    getAnswer() {
+        let str = this.state.input;
+        let letters = str.match(/[a-z0-9]/gi)
+        //An array to a string
+        .join("")  
+        .toLowerCase();
+              
+        //i start from 0 and j start from end 
+        for (let i = 0; i < letters.length; i++) {
+          for (let j = letters.length - 1; j >= 0; j--) {
+            //If i and j get to middle and then return true
+            //i, j should search till middle and
+            if (i != j && i < j) {
+              //If both characters are same then increase i
+              if (letters[i] == letters[j]) {
+                i++;
+              } else {
+              //Else return false
+                this.setState(state => ({
+                    answer: false
+                }));
+              }
+            } else {
+                this.setState(state => ({
+                    answer: true
+                }));
+            }
+          }
+        }
+    }
     render() {
-        let me = this.state.ranNum;
-        let com = this.state.otherRanNum;
         return (
             <Main>
-                <Toggle name={"Click me"}/>
-                <button onClick={this.handleClick}>Click me</button> 
-                {this.state.isToggledOn? "on" : "off"}
-                <button onClick={this.saveNumber}>getRanNum</button>
-                {<Test1 me={me} com={com} />}    
+              <input type="text" onChange={this.getText}></input>
+              <button type="button" onClick={this.getAnswer}>click me</button>
+              {this.state.input}
+              {this.state.answer}  
             </Main>
         );
     }

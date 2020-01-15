@@ -21,8 +21,10 @@ export default Portfolio
 const Square = styled.div`
     display: flex;
     flex-wrap: wrap;
-    width: 1000px;
-    margin: auto;
+    position: relative;
+    left: 250px;
+    width: 50%;
+
 `;
 
 const Image = styled.img`

@@ -5,6 +5,8 @@ import {
     Route
 } from 'react-router-dom'
 import styled from 'styled-components'
+import ButtonGroup from 'react-bootstrap/ButtonGroup'
+import Button from 'react-bootstrap/Button'
 
 import About from '../About'
 import Skills from '../Skills'
@@ -18,29 +20,31 @@ class SideBar extends Component {
         return (
           <div>
           <Nav>
+          <ButtonGroup>
           <Ul>
-            <li>
-              <StyledLink to="/">Home</StyledLink>        
-            </li>
-            <li>
-              <StyledLink to="/about">About</StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/skills">Skills</StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/list">Movie Lists</StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/users">User Information</StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/blog">Blogs</StyledLink>
-            </li>
-            <li>
-              <StyledLink to="/test">Test</StyledLink>
-            </li>
+            <StyledButton>
+              <StyledLink to="/"><StyledHeading>Home</StyledHeading></StyledLink>        
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/about"><StyledHeading>About</StyledHeading></StyledLink>
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/skills"><StyledHeading>Skills</StyledHeading></StyledLink>
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/list"><StyledHeading>Movie Lists</StyledHeading></StyledLink>
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/users"><StyledHeading>User Information</StyledHeading></StyledLink>
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/blog"><StyledHeading>Blogs</StyledHeading></StyledLink>
+            </StyledButton>
+            <StyledButton>
+              <StyledLink to="/test"><StyledHeading>Test</StyledHeading></StyledLink>
+            </StyledButton>
           </Ul>
+          </ButtonGroup> 
         </Nav>
 
         <Switch>
@@ -68,26 +72,37 @@ class SideBar extends Component {
     }
 }
 
+export default SideBar;
+
+const Nav = styled.nav`
+  top: 2rem;  
+  left: 18rem;
+  display: block;
+  z-index: 1;
+  position: fixed;    
+`
 const Ul = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `
-const Nav = styled.nav`
-  width: 20%;
-  display: block;
-  background-color: hsl(201, 36%, 50%);
-  position: fixed;
+const StyledButton = styled(Button)`
+width: 13rem;
+margin-top: -0.3rem;
+background-color: hsla(0, 100%, 0%, 0.8);
+border-color: hsla(0, 100%, 0%, 0.8);
 `
 const StyledLink = styled(Link)`
 font-size: 20px;
 text-decoration: none;
 &:visited {
-  color: black;
+  color: hsl(0, 100%, 100%);;
 }
 &:hover {
   color: red;
 }
 `
-
-export default SideBar;
+const StyledHeading = styled.h6`
+text-align: left;
+padding-top: 0.5rem;
+`

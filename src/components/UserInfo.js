@@ -39,6 +39,20 @@ class UserInfo extends Component {
                         <TdFirst>Website: </TdFirst>
                         <TdSecond>{person.website}</TdSecond>
                     </tr>
+                    <tr>
+                        <TdFirst>Address: </TdFirst>
+                 <TdSecond>{person.address.suite} {person.address.street} {person.address.city}</TdSecond>
+                    </tr>
+                    <tr>
+                        <TdFirst>Zipcode: </TdFirst>
+    <TdSecond>{person.address.zipcode}</TdSecond>
+                    </tr>
+                    <tr>
+                        <TdFirst>Company: </TdFirst>
+    <TdSecond>{person.company.name}</TdSecond>
+    <TdFirst>Business: </TdFirst>
+    <TdSecond>{person.company.bs}</TdSecond>
+                    </tr>
                     </div>
                     )}
             </Table>

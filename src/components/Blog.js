@@ -8,7 +8,8 @@ import Card from 'react-bootstrap/Card'
 
 class Blog extends Component {
     state = {
-        blogs: []
+        blogs: [],
+        users: []
     }
 
     componentDidMount() {
@@ -16,23 +17,28 @@ class Blog extends Component {
             .then(res =>
                 this.setState({ blogs: res.data })
                 );
+        
+         axios.get("http://jsonplaceholder.typicode.com/users")
+           .then(res =>
+               this.setState({ users: res.data })
+               );
     }
-    render() {
+    render() {      
         return (
             <Main>
             <Accordion>
                 {this.state.blogs.map(post =>
-                    <StyledCard border="dark">
+                  <StyledCard border="dark">
                       <Card.Header>
                         <Accordion.Toggle as={Button} variant="light" eventKey={post.id}>
-                          <StyledH3>{post.title}</StyledH3>
+                          <StyledH3>{post.title} </StyledH3>
                         </Accordion.Toggle>
                       </Card.Header>
                       <Accordion.Collapse eventKey={post.id}>
                         <Card.Body>{post.body}</Card.Body>
                       </Accordion.Collapse>
                     </StyledCard>
-                    )}
+                )}
             </Accordion>
             </Main>
         );

@@ -22,9 +22,12 @@ const Square = styled.div`
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    left: 250px;
-    width: 50%;
-
+    top: 100px;
+    width: 57%;
+    margin: 0 auto;
+        @media (max-width: 1500px) {
+            width: 70%;
+        }
 `;
 
 const Image = styled.img`

@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
-    Link,
     Switch,
     Route
 } from 'react-router-dom'
 import styled from 'styled-components'
+
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import Button from 'react-bootstrap/Button'
+import NavButton from './NavButton'
 
 import About from '../About'
 import Skills from '../Skills'
@@ -15,94 +15,64 @@ import UserInfo from '../UserInfo'
 import Blog from '../Blog'
 import Test from '../Test'
 
-class SideBar extends Component {
-    render() {
+
+//List of navigation. You can add lists in this array.
+const arr = ["", "about", "skills", "movielist", "userinfo", "blog", "test"];
+
+class SideBar extends Component {    
+    render() {      
         return (
-          <div>
+          <Main>
           <Nav>
           <ButtonGroup>
           <Ul>
-            <StyledButton>
-              <StyledLink to="/"><StyledHeading>Home</StyledHeading></StyledLink>        
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/about"><StyledHeading>About</StyledHeading></StyledLink>
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/skills"><StyledHeading>Skills</StyledHeading></StyledLink>
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/list"><StyledHeading>Movie Lists</StyledHeading></StyledLink>
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/users"><StyledHeading>User Information</StyledHeading></StyledLink>
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/blog"><StyledHeading>Blogs</StyledHeading></StyledLink>
-            </StyledButton>
-            <StyledButton>
-              <StyledLink to="/test"><StyledHeading>Test</StyledHeading></StyledLink>
-            </StyledButton>
+            {/*Mapping list array to NavButton component of Routher Link */}
+            {arr.map(path => <NavButton link={path} />)}
           </Ul>
           </ButtonGroup> 
         </Nav>
 
+            {/*To add lists you should add a component in Route after adding list in the array */}
         <Switch>
           <Route path="/about">
-            <About />
+              <About />
           </Route>
           <Route path="/skills">
-            <Skills />
+              <Skills />
           </Route>
-          <Route path="/list">
-            <MovieList />
+          <Route path="/movielist">
+              <MovieList />
           </Route>
-          <Route path="/users">
-            <UserInfo />
+          <Route path="/userinfo">
+              <UserInfo />
           </Route>
           <Route path="/blog">
-            <Blog />
+              <Blog />
           </Route>
           <Route path="/test">
-            <Test />
+              <Test />
           </Route>
         </Switch>
-        </div>
+        </Main>
         );
     }
 }
 
 export default SideBar;
 
+//constants under here are for style sheet.
 const Nav = styled.nav`
-  top: 2rem;  
-  left: 18rem;
+  top: 2rem; 
   display: block;
   z-index: 1;
-  position: fixed;    
+  position: fixed; 
 `
 const Ul = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `
-const StyledButton = styled(Button)`
-width: 13rem;
-margin-top: -0.3rem;
-background-color: hsla(0, 100%, 0%, 0.8);
-border-color: hsla(0, 100%, 0%, 0.8);
-`
-const StyledLink = styled(Link)`
-font-size: 20px;
-text-decoration: none;
-&:visited {
-  color: hsl(0, 100%, 100%);;
-}
-&:hover {
-  color: red;
-}
-`
-const StyledHeading = styled.h6`
-text-align: left;
-padding-top: 0.5rem;
+const Main = styled.div`
+margin: 0 auto;
+width: 70%;
 `

@@ -12,9 +12,9 @@ class Skills extends Component {
                 How to update this website : Git <br/>
                 Deployed at : Netlify <br/>
                 React Stack :<br/> 
-                    Axios<br/>   
-                    styled-component<br/>    
-                    React-route<br/> 
+                    -Axios<br/>   
+                    -styled-component<br/>    
+                    -React-route<br/> 
             </Main>
         ); 
     }

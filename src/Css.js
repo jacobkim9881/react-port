@@ -5,5 +5,5 @@ export const Main = styled.div`
     top: 100px;
     margin: 0 auto;
     background-color: hsla(0, 100%, 0%, 0.5);
-    width: 80%;
+    width: 100%;
 `

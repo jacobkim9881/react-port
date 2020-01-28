@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@icons-pack/react-simple-icons": "^2.1.0",
     "axios": "^0.19.1",
     "bootstrap": "^4.4.1",
     "netlify-cli": "^2.30.0",

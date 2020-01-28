@@ -8,12 +8,14 @@ import styled from 'styled-components'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import NavButton from './NavButton'
 
+import Home from '../Home'
 import About from '../About'
 import Skills from '../Skills'
 import MovieList from '../MovieList'
 import UserInfo from '../UserInfo'
 import Blog from '../Blog'
 import Test from '../Test'
+import Hidden from '../Hidden'
 
 
 //List of navigation. You can add lists in this array.
@@ -51,6 +53,12 @@ class SideBar extends Component {
           </Route>
           <Route path="/test">
               <Test />
+          </Route>
+          <Route path="/hidden">
+              <Hidden />
+          </Route>
+          <Route path="/">
+              <Home />
           </Route>
         </Switch>
         </Main>

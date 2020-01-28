@@ -14,8 +14,10 @@ class About extends Component {
                 2016년 7월 : 노동부의 청년취업성공 패키지에 참여<br/>
                 2016년 3월 - 6월 : 전자기기 B2B 회사인 대양시스텍에서 자산조사 업무 및거래처인 STUNITAS에서 사무지원 업무<br/>
                 2015년 8월 - 2016년 2월 : 대기업 공채 준비<br/><br/>
-                <a href="http://www.incruit.com/resume/resumeview.asp?rsm=2018080739277">한글 이력서</a><br/>
-                <a href="https://drive.google.com/open?id=1IlByxq_zPQ88hHGZ42Z0Dt5Tj2gfezy0">영문 이력서(English Resume)</a>
+                <a href="https://drive.google.com/file/d/1OuT9RPwgN3LemVK0iZNAf7HDwxfg4fLd/view?usp=sharing">한글 이력서</a><br/>
+                <a href="https://drive.google.com/open?id=1IlByxq_zPQ88hHGZ42Z0Dt5Tj2gfezy0">영문 이력서(English Resume)</a><br/>
+                <a href="https://codepen.io/jacobkim9881/pen/OJPabvL">Javascript Portfolio: Random Famous Ailens' Quotes Maker
+</a>
             </Main>
         );
     }

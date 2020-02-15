@@ -14,12 +14,12 @@ class Blog extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://jsonplaceholder.typicode.com/posts")
+        axios.get("https://jsonplaceholder.typicode.com/posts")
             .then(res =>
                 this.setState({ blogs: res.data })
                 );
         
-         axios.get("http://jsonplaceholder.typicode.com/users")
+         axios.get("https://jsonplaceholder.typicode.com/users")
            .then(res =>
                this.setState({ users: res.data })
                );

@@ -1,0 +1,9 @@
+{
+    "component" : {
+        "Home" : {
+            "Header_E" : "Hi, I am Jacob Kim",
+            "Header_K" : "안녕하세요. 김영태입니다.",
+            "Tag" : "Softwear Enginner | JavaScript | React.js | HTML | CSS | Git | Npm | English speaker"
+        }
+    }
+}

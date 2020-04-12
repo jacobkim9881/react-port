@@ -8,18 +8,18 @@ import styled from 'styled-components'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import NavButton from './NavButton'
 
-import Home from '../Home'
-import About from '../About'
-import Skills from '../Skills'
-import MovieList from '../MovieList'
-import UserInfo from '../UserInfo'
-import Blog from '../Blog'
-import Test from '../Test'
-import Hidden from '../Hidden'
-
+import Home from '../pages/Home'
+import About from '../pages/About'
+import Skills from '../pages/Skills'
+import MovieList from '../pages/MovieList'
+import UserInfo from '../pages/UserInfo'
+import Blog from '../pages/Blog'
+import Test from '../test/Test'
+import Hidden from '../pages/Hidden'
+import Login from '../pages/portfolio/Login'
 
 //List of navigation. You can add lists in this array.
-const arr = ["", "about", "skills", "movielist", "userinfo", "blog", "test"];
+const arr = ["", "about", "skills", "login", "movielist", "userinfo", "blog", "test"];
 
 class SideBar extends Component {    
     render() {      
@@ -36,6 +36,9 @@ class SideBar extends Component {
 
             {/*To add lists you should add a component in Route after adding list in the array */}
         <Switch>
+            <Route path="/login">
+              <Login />
+          </Route>
           <Route path="/about">
               <About />
           </Route>

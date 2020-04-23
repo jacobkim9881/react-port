@@ -1,6 +1,8 @@
-This github page is a portfolio page from Jacob Kim.
+# About my web page
+This github page is a portfolio page from Jacob Kim. This application is deployed at Netlify.
+## 
 
-# Portfolio
+# Login at React with nodejs and mysql
 ## Initiate node package manager
 * Make directory
 `mkdir webserver`
@@ -284,7 +286,7 @@ https://www.guru99.com/postman-tutorial.html
 ~~~
 
 * When you put a name and a password into input your information will be saved at `ref` temporarily.
-* And after submit then handleLogin function will started.
+* And submit then handleLogin function will started after putting name and password.
 * Write handleLogin function
 
 ~~~
@@ -348,3 +350,110 @@ export default Login;
 ~~~
 
 * Run React by `npm start` and see login form at your browser.
+
+## Edit ID by put request with node.js
+
+~~~
+//user.model.js
+const con = require('./db')
+
+const User = function(user) {
+    this.username = user.username
+    this.password = user.password
+    this.email = user.email
+}
+User.editId = (id, user, result) => {
+    if (user.email == "") {
+        if (user.password == "") {            
+            console.log('Please put your email, password');
+            result(null, null);
+        } else{
+            con.query(`UPDATE api SET password = ? WHERE id = ?`, 
+            [user.password, id], (err, res) => {                        
+            result(null, res);
+            });
+        }
+    } else if (user.password == "") {
+            con.query(`UPDATE api SET email = ? WHERE id = ?`, 
+            [user.email, id], (err, res) => {       
+            result(null, res);
+        });
+        } else {
+            con.query(`UPDATE api SET password = ?, email = ? WHERE id = ?`, 
+            [user.password, user.email, id], (err, res) => {        
+            console.log(err);        
+            result(null, res);
+        });
+        }        
+}
+
+module.exports = User;
+~~~
+
+~~~
+//user.controller.js
+const User = require('../models/users.model')
+
+exports.setId = (req, res) => {        
+    User.editId(req.params.userid, new User(req.body), (err, data) => {        
+        if (err) {
+            console.log (err);
+            res.end();
+        }
+        res.send(data);
+    })
+}
+~~~
+
+~~~
+//user.route.js
+const express = require('express')
+
+const users = require('../controller/users.controller')
+
+const router = express.Router();
+
+router.put('/edit/:userid', users.setId);
+
+module.exports = router;
+~~~
+
+## Edit ID with React.js
+
+~~~
+import React, { Component } from 'react';
+import axios from 'axios'
+
+class EditId extends Component {
+    constructor() {
+        super();
+        this.handleEdit = this.handleEdit.bind(this);
+    }
+    state = {
+    }
+
+    handleEdit(e) {
+        let id = window.location.pathname[window.location.pathname.length - 1];
+        e.preventDefault();        
+        axios.put('http://localhost:3001/api/edit/' + id, {
+            password: this.pwd.value,
+            email: this.email.value
+        })
+    }
+
+    render() {                        
+        return (
+            <div>
+            <br /><br /><br /><br />
+            <form onSubmit={this.handleEdit}>
+                change password: <input type="text" ref={ref => {this.pwd = ref}} name="password" />
+                change email: <input type="text" ref={ref => {this.email = ref}} name="email" />
+                <input type="submit" />                    
+            </form>    
+        </div>
+        );
+    }
+}
+
+export default EditId;
+~~~

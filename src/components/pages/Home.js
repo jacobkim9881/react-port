@@ -1,35 +1,34 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import styled from 'styled-components'
-import { Main } from '../../Css'
+
 import { Linkedin, Github, Google, Freecodecamp, Instagram } from '@icons-pack/react-simple-icons'
 
-class Home extends Component {
-    render() {
-        return (
-            <Main>
-                <Header>
-                Hi, I am Jacob Kim
-                </Header>
-                <Tag>
-                    Softwear Enginner | JavaScript | React.js | HTML | CSS | Git | Npm | English speaker
-                </Tag>
-                <Profiles>
-                    <center>
-                    <Adress href="https://www.linkedin.com/in/kim-jacob-25baa5179/"><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                    <Adress href="https://github.com/jacobkim9881"><Github color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                    <Adress href="https://www.freecodecamp.org/jacobkim9881"><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                    <Adress href="mailto: jacobkim9881@gmail.com"><Google color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                    <Adress href="https://www.instagram.com/jacobkim116"><Instagram color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                    <Adress href="https://blog.naver.com/kytcoca">Blog</Adress>
-                    </center>
-                </Profiles>
-            </Main>
-        );
-    }
+import { Main } from '../../Css'
+import info from '../api/info.config.json'
+
+export default function Home() {   
+    return (
+        <Main>
+            <Header>
+            Hi, I am Jacob Kim
+            </Header>
+            <Tag>
+                Softwear Enginner | JavaScript | React.js | HTML | CSS | Git | Npm | English speaker
+            </Tag>
+            <Profiles>
+                <center>
+                <Adress href={info.Linkedin}><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Github}><Github color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Freecodecamp}><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Email}><Google color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Instagram}><Instagram color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Etc}>Blog</Adress>
+                </center>
+            </Profiles>
+        </Main>
+    );
 }
 
-export default Home;
 const Header = styled.h1`
 font-size: 8rem;
 text-align: center;

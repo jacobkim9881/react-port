@@ -24,11 +24,12 @@ class Skills extends Component {
                 Vim<br/> 
                 Javascript<br/> 
                 Node.js :<br/> 
-                    express<br/> 
-                        session
-                        router                        
-                    mysql<br/> 
-                    express-generator<br/> 
+                    - express<br/> 
+                        * session <br/>
+                        * router <br/>                 
+                        * express-generator<br/> 
+                    - mysql<br/>                     
+                    - cors<br/> 
                 MySQL<br/> <br/> 
                 Java<br/> 
                 JSP<br/> 

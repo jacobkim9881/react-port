@@ -29,6 +29,7 @@ class About extends Component {
 </a>
                 <p>Posts</p>
                 <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">안 쓰는 스마트폰에 노드 서버 작동하기(Running node server with mysql on my smartphone)</a>
+                <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >카페24에 MySQL 연동한 node 서버 구동하기(Hosting web server at cafe24(Getting a job in Korea))</a>
             </Main>
         );
     }

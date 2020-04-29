@@ -1,6 +1,5 @@
 # About my web page
 This github page is a portfolio page from Jacob Kim. This application is deployed at Netlify.
-## 
 
 # Login at React with nodejs and mysql
 ## Initiate node package manager
@@ -274,7 +273,7 @@ https://www.guru99.com/postman-tutorial.html
 
 ## Login page at React
 
-* Make login form first,
+* Before setting server we make login form at React. 
 
 ~~~
 <form onClick={this.handleLogin}>
@@ -287,7 +286,7 @@ https://www.guru99.com/postman-tutorial.html
 
 * When you put a name and a password into input your information will be saved at `ref` temporarily.
 * And submit then handleLogin function will started after putting name and password.
-* Write handleLogin function
+* Write handleLogin function,
 
 ~~~
 handleLogin(e) {
@@ -304,9 +303,9 @@ handleLogin(e) {
 
 * When clicked submit buttion, references(a name and password) will be sent to webserver by requesting post.
 * After authentication and request is finished, server response with data.
-* Data is set at name state.
+* User name posted at the server is responsed and set at name state.
 
-* This is finished below,
+* This is finished React js file below,
 
 ~~~
 import React, { Component } from 'react';
@@ -352,7 +351,7 @@ export default Login;
 * Run React by `npm start` and see login form at your browser.
 
 ## Edit ID by put request with node.js
-
+We gonna request editing query data. Connection information is written at ## Put code for running node server with mysql. Frist put,
 ~~~
 //user.model.js
 const con = require('./db')
@@ -390,6 +389,9 @@ User.editId = (id, user, result) => {
 module.exports = User;
 ~~~
 
+* This will edit password or email or both. It will be exported to controller.
+* Put below,
+
 ~~~
 //user.controller.js
 const User = require('../models/users.model')
@@ -405,6 +407,9 @@ exports.setId = (req, res) => {
 }
 ~~~
 
+* This will be exported to route too. 
+* Put below,
+
 ~~~
 //user.route.js
 const express = require('express')
@@ -418,18 +423,92 @@ router.put('/edit/:userid', users.setId);
 module.exports = router;
 ~~~
 
-## Edit ID with React.js
+* This will request put method with user ID, a password or a email or both.
+
+## Make link to ~/:userid with using route-react-dom at React
+Before edit user accout we need user id on url. To put user id on url we need react router by entering the url with user id.
+
+* Put,
 
 ~~~
 import React, { Component } from 'react';
+import { Switch, Route, Link,
+  BrowserRouter as Router
+} from 'react-router-dom'
+
+class RouteLink extends Component {
+    state = {
+        userid: 7
+    }
+    render() {
+        return (
+            <Router>
+            <Link to={`/edit/${this.state.userid}`}>Edit your account</Link>                               
+                <Switch>
+                    <Route path="/edit/:id">
+                         <form onSubmit={this.handleEdit}>
+                              <table>
+                              <tr>
+                              <th>change password: </th><th><input type="text" ref={ref => {this.pwd = ref}} name="password" /></th>
+                              </tr>
+                              <tr>
+                              <th>change email: </th><th><input type="text" ref={ref => {this.email = ref}} name="email" /></th>
+                              </tr>
+                              <input type="submit" />                    
+                              </table>
+                         </form>
+                    </Route>
+                </Switch>
+            </Router>
+        );
+    }
+}
+
+export default RouteLink
+~~~
+
+* Let's say userid 7. 
+* When you clicked `Edit your account` then you are entered at ~/edit/7 on your url. We have user id on the url now. You can see edit form.
+
+## Edit id by PUT request at React.js
+We will send PUT reqsuet to web server.
+* We add handle edit id function at edit page. 
+* We need import axios first, `import axios from 'axios'`.
+* Put this into edit page component,
+
+~~~
+constructor() {
+        super();
+        this.handleEdit = this.handleEdit.bind(this);
+    }
+
+    handleEdit(e) {
+        let id = window.location.pathname[window.location.pathname.length - 1];
+        e.preventDefault();        
+        axios.put('http://localhost:3001/api/edit/' + id, {
+            password: this.pwd.value,
+            email: this.email.value
+        })
+    }
+~~~
+
+* The function will read user id on the url and send users password and email with your id.
+* So RouteLink component lools like this,
+
+~~~
+import React, { Component } from 'react';
+import { Switch, Route, Link,
+  BrowserRouter as Router
+} from 'react-router-dom'
 import axios from 'axios'
 
-class EditId extends Component {
+class RouteLink extends Component {
     constructor() {
         super();
         this.handleEdit = this.handleEdit.bind(this);
     }
     state = {
+        userid: 7
     }
 
     handleEdit(e) {
@@ -441,19 +520,29 @@ class EditId extends Component {
         })
     }
 
-    render() {                        
+    render() {
         return (
-            <div>
-            <br /><br /><br /><br />
-            <form onSubmit={this.handleEdit}>
-                change password: <input type="text" ref={ref => {this.pwd = ref}} name="password" />
-                change email: <input type="text" ref={ref => {this.email = ref}} name="email" />
-                <input type="submit" />                    
-            </form>    
-        </div>
+            <Router>
+            <Link to={`/edit/${this.state.userid}`}>Edit your account</Link>                               
+                <Switch>
+                    <Route path="/edit/:id">
+                         <form onSubmit={this.handleEdit}>
+                              <table>
+                              <tr>
+                              <th>change password: </th><th><input type="text" ref={ref => {this.pwd = ref}} name="password" /></th>
+                              </tr>
+                              <tr>
+                              <th>change email: </th><th><input type="text" ref={ref => {this.email = ref}} name="email" /></th>
+                              </tr>
+                              <input type="submit" />                    
+                              </table>
+                         </form>
+                    </Route>
+                </Switch>
+            </Router>
         );
     }
 }
 
-export default EditId;
+export default RouteLink
 ~~~

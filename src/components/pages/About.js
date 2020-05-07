@@ -24,11 +24,9 @@ class About extends Component {
                 */}
                 <a href="https://drive.google.com/file/d/1OuT9RPwgN3LemVK0iZNAf7HDwxfg4fLd/view?usp=sharing">한글 이력서</a><br/>
                 <a href="https://drive.google.com/open?id=1ReWE2tDjrsK7KGqWrx42bIQ2euKdo8ih1EkRIfyPFXg">영문 이력서(English Resume)</a><br/>
-                <p>Portfolios</p>
-                <a href="https://codepen.io/jacobkim9881/pen/OJPabvL"> Random Famous Ailens' Quotes Maker
-</a>
-                <p>Posts</p>
-                <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">안 쓰는 스마트폰에 노드 서버 작동하기(Running node server with mysql on my smartphone)</a>
+                
+                <h4>Posts</h4>
+                <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">안 쓰는 스마트폰에 노드 서버 작동하기(Running node server with mysql on my smartphone)</a><br />
                 <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >카페24에 MySQL 연동한 node 서버 구동하기(Hosting web server at cafe24(Getting a job in Korea))</a>
             </Main>
         );

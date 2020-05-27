@@ -7,8 +7,10 @@ class Portfolio extends Component {
             <Main>
                 <h4>Portfolios</h4>
                 <a href="https://codepen.io/jacobkim9881/pen/OJPabvL"> Random Famous Ailens' Quotes Maker
+</a><br /><a href="https://ltmaker.netlify.app"> Lotto number maker
 </a><br /><br />
                 <div>
+                    <a href="https://www.youtube.com/watch?v=SUYgcdyObYU">YouTube : Shopping mall</a><br/>
                     <a href="https://jacobkim9881.github.io/shoppingweb">Shopping mall portfolio</a><br/>
                     <a href="https://github.com/jacobkim9881/shoppingweb">Git page is here</a>
                     <p>Functions <br />

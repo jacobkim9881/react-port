@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 
 import axios from 'axios'
-const API_URL = 'https://jsonplaceholder.typicode.com';
+const API_URL = "false"//'https://jsonplaceholder.typicode.com';
 
 class UserInfo extends Component {
     state = {

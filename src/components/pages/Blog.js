@@ -14,7 +14,7 @@ class Blog extends Component {
     }
 
     componentDidMount() {
-      const address = "https://jsonplaceholder.typicode.com/";
+      const address = "false"//"https://jsonplaceholder.typicode.com/";
         axios.get(address + "posts")
             .then(res =>
                 this.setState({ blogs: res.data })

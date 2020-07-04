@@ -7,8 +7,7 @@ class Skills extends Component {
             <Main>
                 OS: Linux Mint <br/>
                 IDE: Vs Code <br/>
-                Package Manager : npm <br/>
-                Framework : React.js <br/>
+                Package Manager : npm <br/>                
                 How to update this website : Git <br/>
                 Deployed at : Netlify <br/>
 
@@ -27,9 +26,11 @@ class Skills extends Component {
                     - express<br/> 
                         * session <br/>
                         * router <br/>                 
-                        * express-generator<br/> 
+                        * express-generator<br/>                         
                     - mysql<br/>                     
                     - cors<br/> 
+                    - sequelize<br/>
+                    - helmet <br/>                        
                 MySQL<br/> <br/> 
                 Java<br/> 
                 JSP<br/> 

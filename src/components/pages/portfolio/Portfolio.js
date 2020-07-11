@@ -24,6 +24,8 @@ class Portfolio extends Component {
                     </p>
                 </div>
                 <h5>YouTubes</h5>
+                    <a href="https://www.youtube.com/playlist?list=PL_xbjJpRyD5Nxsjhvd3enwi69MZ0cGNl_">코딩한 포트폴리오 재생목록</a><br />
+                    - 코딩한 포트폴리오들을 모아놓은 재생목록입니다.<br />
                     <a href="https://www.youtube.com/watch?v=SUYgcdyObYU">YouTube : Shopping mall</a><br/>
                     - 쇼핑몰에서 제품 판매포스트를 업로드하는 방법 시연 영상 <br />
                     <a href="https://youtu.be/0B4sTW3O6_A">Solar system drawn by canvas of JS</a><br />

@@ -14,6 +14,7 @@ import Skills from '../pages/Skills'
 import Portfolio from '../pages/portfolio/Portfolio'
 import Notepad from '../pages/portfolio/Notepad'
 import BallsHitting from '../pages/portfolio/BallsHitting'
+import GearsMoving from '../pages/portfolio/gearsMoving'
 
 import MovieList from '../pages/MovieList'
 import UserInfo from '../pages/UserInfo'
@@ -42,6 +43,7 @@ class SideBar extends Component {
         <Switch>
             <Route path="/portfolio" children={<Portfolio />} />
             <Route path="/ballsHitting" children={<BallsHitting />} />
+            <Route path="/gearsmoving" children={<GearsMoving />} />
             <Route path="/notepad" children={<Notepad />} />
             <Route path="/login">
               <Login />

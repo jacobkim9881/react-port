@@ -99,11 +99,16 @@ class BallsHitting extends Component {
 
     render() {
         return (
-            <Main>
+            <NoteMain>
                 <canvas ref="canvas" width={1000} height={1000} />
-            </Main>
+            </NoteMain>
         );
     }
 }
 
 export default BallsHitting;
+
+export const NoteMain = styled(Main)`
+    background-color: hsla(0, 100%, 100%);
+    width: 1000px;
+`

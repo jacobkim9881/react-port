@@ -9,7 +9,8 @@ class Notepad extends Component {
     render() {
         return (
             <Main>
-               <Link to='/ballsHitting'>BallsHitting</Link>
+               <Link to='/ballsHitting'>BallsHitting</Link><br/>
+               <Link to='/gearsmoving'>Gears Moving</Link>
             </Main>
         );
     }

@@ -12,6 +12,8 @@ import Home from '../pages/Home'
 import About from '../pages/About'
 import Skills from '../pages/Skills'
 import Portfolio from '../pages/portfolio/Portfolio'
+import Notepad from '../pages/portfolio/Notepad'
+import BallsHitting from '../pages/portfolio/BallsHitting'
 
 import MovieList from '../pages/MovieList'
 import UserInfo from '../pages/UserInfo'
@@ -21,7 +23,7 @@ import Hidden from '../pages/Hidden'
 import Login from '../pages/portfolio/Login'
 
 //List of navigation. You can add lists in this array.
-const arr = ["", "about", "skills", "portfolio"];
+const arr = ["", "about", "skills", "portfolio", "notepad"];
 
 class SideBar extends Component {    
     render() {      
@@ -36,9 +38,11 @@ class SideBar extends Component {
           </ButtonGroup> 
         </Nav>
 
-            {/*To add lists you should add a component in Route after adding list in the array */}
+            {/*To add lists you SHOULD add a component in Route after adding list in the array */}
         <Switch>
             <Route path="/portfolio" children={<Portfolio />} />
+            <Route path="/ballsHitting" children={<BallsHitting />} />
+            <Route path="/notepad" children={<Notepad />} />
             <Route path="/login">
               <Login />
           </Route>

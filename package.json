@@ -1,7 +1,6 @@
 {
   "name": "react-port",
   "version": "0.1.0",
-  "homepage": "https://github.com/jacobkim9881/react-port",
   "private": true,
   "dependencies": {
     "@icons-pack/react-simple-icons": "^3.9.0",

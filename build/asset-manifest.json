@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/jacobkim9881/react-port/static/css/main.fcdcdc2b.chunk.css",
+    "main.js": "/jacobkim9881/react-port/static/js/main.0f18c916.chunk.js",
+    "main.js.map": "/jacobkim9881/react-port/static/js/main.0f18c916.chunk.js.map",
+    "runtime-main.js": "/jacobkim9881/react-port/static/js/runtime-main.23703c3e.js",
+    "runtime-main.js.map": "/jacobkim9881/react-port/static/js/runtime-main.23703c3e.js.map",
+    "static/css/2.11829350.chunk.css": "/jacobkim9881/react-port/static/css/2.11829350.chunk.css",
+    "static/js/2.2eb06009.chunk.js": "/jacobkim9881/react-port/static/js/2.2eb06009.chunk.js",
+    "static/js/2.2eb06009.chunk.js.map": "/jacobkim9881/react-port/static/js/2.2eb06009.chunk.js.map",
+    "index.html": "/jacobkim9881/react-port/index.html",
+    "precache-manifest.7fc82e1f73cdc4a82da5fc53508e59c6.js": "/jacobkim9881/react-port/precache-manifest.7fc82e1f73cdc4a82da5fc53508e59c6.js",
+    "service-worker.js": "/jacobkim9881/react-port/service-worker.js",
+    "static/css/2.11829350.chunk.css.map": "/jacobkim9881/react-port/static/css/2.11829350.chunk.css.map",
+    "static/css/main.fcdcdc2b.chunk.css.map": "/jacobkim9881/react-port/static/css/main.fcdcdc2b.chunk.css.map",
+    "static/js/2.2eb06009.chunk.js.LICENSE.txt": "/jacobkim9881/react-port/static/js/2.2eb06009.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.23703c3e.js",
+    "static/css/2.11829350.chunk.css",
+    "static/js/2.2eb06009.chunk.js",
+    "static/css/main.fcdcdc2b.chunk.css",
+    "static/js/main.0f18c916.chunk.js"
+  ]
+}

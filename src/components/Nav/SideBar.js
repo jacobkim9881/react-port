@@ -15,6 +15,7 @@ import Portfolio from '../pages/portfolio/Portfolio'
 import Notepad from '../pages/portfolio/Notepad'
 import BallsHitting from '../pages/portfolio/BallsHitting'
 import GearsMoving from '../pages/portfolio/gearsMoving'
+import Goldratio from '../pages/portfolio/goldratio'
 
 import MovieList from '../pages/MovieList'
 import UserInfo from '../pages/UserInfo'
@@ -44,6 +45,7 @@ class SideBar extends Component {
             <Route path="/portfolio" children={<Portfolio />} />
             <Route path="/ballsHitting" children={<BallsHitting />} />
             <Route path="/gearsmoving" children={<GearsMoving />} />
+            <Route path="/goldratio" children={<Goldratio />} />
             <Route path="/notepad" children={<Notepad />} />
             <Route path="/login">
               <Login />

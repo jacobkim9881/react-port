@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import db from '../text.json'
-
 class Graph1 extends Component {
 
     constructor(props) {

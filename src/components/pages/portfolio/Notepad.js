@@ -10,7 +10,8 @@ class Notepad extends Component {
         return (
             <Main>
                <Link to='/ballsHitting'>BallsHitting</Link><br/>
-               <Link to='/gearsmoving'>Gears Moving</Link>
+               <Link to='/gearsmoving'>Gears Moving</Link><br/>
+               <Link to='/goldratio'>Gold ratio drawed</Link><br/>
             </Main>
         );
     }

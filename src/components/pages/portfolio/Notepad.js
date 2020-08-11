@@ -12,6 +12,8 @@ class Notepad extends Component {
                <Link to='/ballsHitting'>BallsHitting</Link><br/>
                <Link to='/gearsmoving'>Gears Moving</Link><br/>
                <Link to='/goldratio'>Gold ratio drawed</Link><br/>
+               <Link to='/solarsystem'>Solar System</Link><br/>
+               <Link to='/waterpoured'>Water Poured</Link><br/>
             </Main>
         );
     }

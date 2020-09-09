@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { NoteMain } from './BallsHitting'
 
 class gearsMoving extends Component {
@@ -67,8 +66,6 @@ class gearsMoving extends Component {
     }
 
     test(e) {
-        const canvas = this.refs.canvas;
-        const ctx = canvas.getContext('2d');        
 
         let x = e.clientX;
         let y = e.clientY;

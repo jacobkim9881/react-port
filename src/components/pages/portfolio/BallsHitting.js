@@ -57,8 +57,8 @@ class BallsHitting extends Component {
             balls.forEach(data => {
                 if (data.id !== obj.id) {
                     if (Math.pow(obj.radius + data.radius, 2) === Math.pow(obj.xLoc - data.xLoc, 2) + Math.pow(obj.yLoc - data.yLoc, 2) ||       
-                    obj.radius + data.radius === Math.abs(obj.xLoc - data.xLoc) && obj.yLoc === data.yLoc ||
-                    obj.radius + data.radius === Math.abs(obj.yLoc - data.yLoc) && obj.xLoc === data.xLoc ) {
+                    (obj.radius + data.radius === Math.abs(obj.xLoc - data.xLoc) && obj.yLoc === data.yLoc) ||
+                    (obj.radius + data.radius === Math.abs(obj.yLoc - data.yLoc) && obj.xLoc === data.xLoc) ) {
                         obj.toX = !obj.toX;
                         data.toX = !data.toX;
                         obj.toY = !obj.toY;

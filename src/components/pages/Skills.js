@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
-import { Main } from '../../Css'
+import { Main, Texts } from '../../Css'
 
 class Skills extends Component {
     render() {
         return (
             <Main>
+                <Texts>
+                <br/><br/>
                 OS: Linux Mint <br/>
                 IDE: Vs Code <br/>
                 Package Manager : npm <br/>                
                 How to update this website : Git <br/>
                 Deployed at : Netlify <br/>
-
                 
                 <br/> <br/> 
                 Stacks : <br/> 
@@ -36,8 +37,10 @@ class Skills extends Component {
                 JSP<br/> 
                 jQuery<br/> 
                 Eclipse<br/> 
-
-
+                Excutable on OS : ElectronJS<br/>
+                ETC : Chrome Extensions <br/>
+                <br/><br/>
+                </Texts>
             </Main>
         ); 
     }

@@ -29,9 +29,10 @@ class NavButton extends Component {
 
 export default NavButton;
 
+//after click
 //constants under here are for style sheet.
 const StyledButton = styled(Button)`
-width: 12rem;
+width: 13.5rem;
 margin-top: -0.3rem;
 background-color: hsla(0, 100%, 0%, 0.8);
 border-color: hsla(0, 100%, 0%, 0.8);

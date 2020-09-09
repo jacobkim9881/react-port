@@ -82,10 +82,19 @@ export default SideBar;
 
 //constants under here are for style sheet.
 const Nav = styled.nav`
-  top: 2rem; 
+  top: 5rem; 
+  width: 1080px;
+  margin: 0 auto;
   display: block;
   z-index: 1;
-  position: fixed; 
+  position: relative; 
+@media only screen and (max-width: 414px) {
+    background-color: hsla(0, 0%, 0%, 0.7);
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
 `
 const Ul = styled.ul`
   list-style-type: none;

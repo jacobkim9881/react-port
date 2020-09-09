@@ -15,6 +15,10 @@ import Portfolio from '../pages/portfolio/Portfolio'
 import Notepad from '../pages/portfolio/Notepad'
 import BallsHitting from '../pages/portfolio/BallsHitting'
 import GearsMoving from '../pages/portfolio/gearsMoving'
+import Goldratio from '../pages/portfolio/goldratio'
+import SolarSystem from '../pages/portfolio/solarSystem'
+import WaterPoured from '../pages/portfolio/waterPoured'
+
 
 import MovieList from '../pages/MovieList'
 import UserInfo from '../pages/UserInfo'
@@ -42,8 +46,11 @@ class SideBar extends Component {
             {/*To add lists you SHOULD add a component in Route after adding list in the array */}
         <Switch>
             <Route path="/portfolio" children={<Portfolio />} />
+            <Route path="/solarsystem" children={<SolarSystem />} />
+            <Route path="/waterpoured" children={<WaterPoured />} />
             <Route path="/ballsHitting" children={<BallsHitting />} />
             <Route path="/gearsmoving" children={<GearsMoving />} />
+            <Route path="/goldratio" children={<Goldratio />} />
             <Route path="/notepad" children={<Notepad />} />
             <Route path="/login">
               <Login />

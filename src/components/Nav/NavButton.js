@@ -36,6 +36,13 @@ width: 13.5rem;
 margin-top: -0.3rem;
 background-color: hsla(0, 100%, 0%, 0.8);
 border-color: hsla(0, 100%, 0%, 0.8);
+
+@media only screen and (max-width: 414px) {
+  width: 100%;
+  margin-top: none;
+background-color: none;
+  border-color: none;
+}
 `
 const StyledLink = styled(Link)`
 font-size: 20px;

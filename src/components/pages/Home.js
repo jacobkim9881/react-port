@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { Linkedin, Github, Google, Freecodecamp, Instagram } from '@icons-pack/react-simple-icons'
+import { Linkedin, Github, Google, Freecodecamp, Instagram, Twitter } from '@icons-pack/react-simple-icons'
 
 import { Main } from '../../Css'
 import info from '../api/info.config.json'
@@ -24,9 +24,10 @@ export default function Home() {
                 <center>
                 <Adress href={info.Linkedin}><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Github}><Github color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                <Adress href={info.Freecodecamp}><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.FreeCodeCamp}><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Email}><Google color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Instagram}><Instagram color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Twitter}><Twitter color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Etc}>Blog</Adress>
                 </center>
             </Profiles>
@@ -40,6 +41,7 @@ font-size: 8rem;
 text-align: center;
 @media only screen and (max-width: 414px) {
     font-size: 3rem;
+    text-indent: 0px;
 }
 `
 

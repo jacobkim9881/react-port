@@ -31,16 +31,36 @@ import Login from '../pages/portfolio/Login'
 const arr = ["", "about", "skills", "portfolio", "notepad"];
 
 class SideBar extends Component {    
-    render() {      
+    super(props) {        
+        this.render = this.render.bind(this);
+    }
+    state = {
+        listClicked : false
+    }
+
+    handleMenu(e) {
+     if (this.state.listClicked === false) {
+         this.state.listClicked = true;
+     } else {
+        this.state.listClicked = false;
+     }
+    }
+    //componentDidMount() {
+    //    setInterval(() => {            
+    //        window.location.reload();
+    //    }, 1000 * 6)
+    //}
+    render() {              
         return (
           <Main>
           <Nav>
-          <ButtonGroup>
+          <MobMenuBtn onClick={this.handleMenu()}>Menu</MobMenuBtn>
+          <StyledBtnGrp id="list">          
           <Ul>
-            {/*Mapping list array to NavButton component of Routher Link */}
+            {/*Mapping list array to NavButton component of Routher Link */}            
             {arr.map(path => <NavButton link={path} />)}
           </Ul>
-          </ButtonGroup> 
+          </StyledBtnGrp> 
         </Nav>
 
             {/*To add lists you SHOULD add a component in Route after adding list in the array */}
@@ -88,17 +108,34 @@ class SideBar extends Component {
 export default SideBar;
 
 //constants under here are for style sheet.
+const StyledBtnGrp = styled(ButtonGroup)`
+@media only screen and (max-width: 414px) {
+    display : none;
+}
+`
+const MobMenuBtn = styled.span`
+    display: none;
+@media only screen and (max-width: 414px) {
+    &:hover {
+        padding: 20px;
+    }
+    cursor: pointer;
+    padding: 13px;
+    text-indent: 4px;
+    display: inline;
+}
+`
 const Nav = styled.nav`
-  top: 5rem; 
-  width: 1080px;
-  margin: 0 auto;
+  width: 1080px;  
+  margin: 0 auto;  
+  padding-top: 5rem;
   display: block;
   z-index: 1;
   position: relative; 
 @media only screen and (max-width: 414px) {
     background-color: hsla(0, 0%, 0%, 0.7);
+    padding-top: 0;
     width: 100%;
-    top: 0;
     left: 0;
     position: absolute;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Main, Texts } from '../../../Css'
+import { Main, Texts, Head4 } from '../../../Css'
 
 class Portfolio extends Component {
     render() {
@@ -7,7 +7,7 @@ class Portfolio extends Component {
             <Main>
                 <Texts>
                     <br/><br/>
-                <h4>Portfolios</h4>
+                <Head4>Portfolios</Head4>
                 <a href="https://codepen.io/jacobkim9881/pen/OJPabvL"> Random Famous Ailens' Quotes Maker
 </a><br />- API에 있는 격언 중의 하나를 랜덤하게 불러오는 클라이언트 웹페이지입니다.<br/>
 <a href="https://ltmaker.netlify.app"> Lotto number maker
@@ -25,7 +25,7 @@ class Portfolio extends Component {
                     - Excuting queries from get request<br />
                     </p>
                 </div>
-                <h5>YouTubes</h5>
+                <Head4>YouTubes</Head4>
                     <a href="https://www.youtube.com/playlist?list=PL_xbjJpRyD5Nxsjhvd3enwi69MZ0cGNl_">코딩한 포트폴리오 재생목록</a><br />
                     - 코딩한 포트폴리오들을 모아놓은 재생목록입니다.<br />
                     <a href="https://www.youtube.com/watch?v=SUYgcdyObYU">YouTube : Shopping mall</a><br/>

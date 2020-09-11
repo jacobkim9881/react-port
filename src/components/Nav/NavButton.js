@@ -33,9 +33,14 @@ export default NavButton;
 //constants under here are for style sheet.
 const StyledButton = styled(Button)`
 width: 13.5rem;
-margin-top: -0.3rem;
-background-color: hsla(0, 100%, 0%, 0.8);
-border-color: hsla(0, 100%, 0%, 0.8);
+background-color: hsla(0, 100%, 0%, 0);
+border-color: hsla(0, 100%, 100%, 0);
+border-radius: 0px;
+
+&:hover {
+  background-color: hsla(0, 100%, 100%, 0.7);
+  border-color: hsla(0, 100%, 100%, 0.7);
+}
 
 @media only screen and (max-width: 414px) {
   width: 100%;
@@ -47,8 +52,11 @@ background-color: none;
 const StyledLink = styled(Link)`
 font-size: 20px;
 text-decoration: none;
+&:link {
+  color: hsl(0, 100%, 100%);
+}
 &:visited {
-  color: hsl(0, 100%, 100%);;
+  color: hsl(0, 100%, 100%);
 }
 &:hover {
   color: red;

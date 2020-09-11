@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Main = styled.div`
     position: relative;
     top: 0px;    
-    margin: 50px auto;
+    margin: 30px auto;
     background-color: hsla(0, 100%, 0%, 0.5);
     width: 1080px;
     text-indent: 50px;
@@ -17,7 +17,7 @@ export const Main = styled.div`
 `
 
 export const Texts = styled.div `
-margin: 50px;
+margin: 30px;
 text-indent: 0px;
 `
 

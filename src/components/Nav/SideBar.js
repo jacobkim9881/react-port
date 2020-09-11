@@ -109,8 +109,12 @@ export default SideBar;
 
 //constants under here are for style sheet.
 const StyledBtnGrp = styled(ButtonGroup)`
+    margin: 0 auto;
+    display: block;
+    width: 1080px;
 @media only screen and (max-width: 414px) {
     display : none;
+    width: 100%;
 }
 `
 const MobMenuBtn = styled.span`
@@ -126,14 +130,17 @@ const MobMenuBtn = styled.span`
 }
 `
 const Nav = styled.nav`
-  width: 1080px;  
+  width: 100%; 
+  border-bottom: 1px solid white; 
+  background-color: hsla(0, 0%, 0%, 0.7);
   margin: 0 auto;  
-  padding-top: 5rem;
+  padding-top: 0rem;
   display: block;
   z-index: 1;
   position: relative; 
 @media only screen and (max-width: 414px) {
     background-color: hsla(0, 0%, 0%, 0.7);
+    border-color: none;
     padding-top: 0;
     width: 100%;
     left: 0;
@@ -147,5 +154,5 @@ const Ul = styled.ul`
 `
 const Main = styled.div`
 margin: 0 auto;
-width: 70%;
+width: 100%;
 `

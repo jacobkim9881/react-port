@@ -5,15 +5,11 @@ import { Linkedin, Github, Google, Freecodecamp, Instagram, Twitter } from '@ico
 
 import { Main } from '../../Css'
 import info from '../api/info.config.json'
-import HbgBt from '../utilities/hambgButton'
 
 export default function Home() {   
     return (
         <Main><br/><br/>
             <Header>
-            {
-                //<HbgBt />
-            }
             Hello, <br/>I am <br/> Jacob Kim
             </Header>
             <Tag>
@@ -35,7 +31,6 @@ export default function Home() {
         </Main>
     );
 }
-//size
 const Header = styled.h1`
 font-size: 8rem;
 text-align: center;
@@ -59,7 +54,6 @@ padding-left: 1rem;
 padding-right: 1rem;
 color: hsl(0, 100%, 100%);
 `
-//size
 const Tag = styled.h2`
 margin: 50px;
 text-align: center;

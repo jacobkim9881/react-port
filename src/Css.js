@@ -26,3 +26,9 @@ width: 100%;
 padding-bottom: 5px;
 border-bottom: 1px solid white;
 `
+
+export const Head5 = styled.h5`
+width: 100%;
+padding-bottom: 5px;
+border-bottom: 1px solid white;
+`

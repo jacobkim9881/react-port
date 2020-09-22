@@ -65,6 +65,9 @@ const Card1 = styled.div`
     border-radius: 0;
     padding: 30px;
     margin: 1%;
+@media only screen and (max-width: 415px) {
+    width: 98%;
+}
 `
 const Card2 = styled.div`
     background-color: hsla(0,100%,0%,0.5);

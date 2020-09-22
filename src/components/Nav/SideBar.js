@@ -133,7 +133,7 @@ const MobMenuBtn = styled.span`
     display: none;
 @media only screen and (max-width: 414px) {
     cursor: pointer;
-    padding: 13px;
+    padding: 13px 9px;    
     text-indent: 4px;
     display: block;
 }

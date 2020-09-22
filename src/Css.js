@@ -19,6 +19,12 @@ export const Main = styled.div`
 export const Texts = styled.div `
 margin: 30px;
 text-indent: 0px;
+padding-top: 50px;
+padding-bottom: 50px;
+@media only screen and (max-width: 415px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 `
 
 export const Head4 = styled.h4`

@@ -7,7 +7,7 @@ class Notepad extends Component {
     render() {
         return (
             <Main>
-                <Texts><br/><br/>
+                <Texts>
                <Link to='/ballsHitting'>BallsHitting</Link><br/>
                <Link to='/gearsmoving'>Gears Moving</Link><br/>
                <Link to='/goldratio'>Gold ratio drawed</Link><br/>

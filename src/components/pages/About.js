@@ -7,7 +7,6 @@ class About extends Component {
         return (
             <Main>
                 <Texts>
-                <br/><br/>
                 <Head4>Who am I?</Head4>
                     프론트앤드 혹은 풀스택 개발자로 전직 준비 중입니다. 코딩부트캠프에서 튜토리얼을 반복하면서 깔끔한 코딩을 익혔습니다. <br/>
                     HTML, CSS, Javascript에 익숙하고 React.JS와 jQuery와 같은 라이브러리도 습득했고 UI에 대한 열정이 있습니다. <br/>
@@ -27,8 +26,7 @@ class About extends Component {
                 <br/>
                 <Head4>Posts</Head4>
                 <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">안 쓰는 스마트폰에 노드 서버 작동하기(Running node server with mysql on my smartphone)</a><br />
-                <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >카페24에 MySQL 연동한 node 서버 구동하기(Hosting web server at cafe24(Getting a job in Korea))</a>
-                <br/><br/><br/>
+                <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >카페24에 MySQL 연동한 node 서버 구동하기(Hosting web server at cafe24(Getting a job in Korea))</a>                
                 </Texts>
             </Main>
         );

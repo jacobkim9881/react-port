@@ -6,7 +6,6 @@ class Portfolio extends Component {
         return (
             <Main>
                 <Texts>
-                    <br/><br/>
                 <Head4>Portfolios</Head4>
                 <a href="https://codepen.io/jacobkim9881/pen/OJPabvL"> Random Famous Ailens' Quotes Maker
 </a><br />- API에 있는 격언 중의 하나를 랜덤하게 불러오는 클라이언트 웹페이지입니다.<br/>
@@ -31,8 +30,7 @@ class Portfolio extends Component {
                     <a href="https://www.youtube.com/watch?v=SUYgcdyObYU">YouTube : Shopping mall</a><br/>
                     - 쇼핑몰에서 제품 판매포스트를 업로드하는 방법 시연 영상 <br />
                     <a href="https://youtu.be/0B4sTW3O6_A">Solar system drawn by canvas of JS</a><br />
-                    - 태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다.
-                    <br/><br/>
+                    - 태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다.                    
                     </Texts>
             </Main>
         );

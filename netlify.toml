@@ -1,6 +1,30 @@
 [[redirects]]
-  from = "/old-path"
-  to = "/new-path"
+  from = "/about"
+  to = "https://lucid-clarke-3ee16f.netlify.app/about"
+  status = 301
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/skills"
+  to = "https://lucid-clarke-3ee16f.netlify.app/skills"
+  status = 301
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/portfolio"
+  to = "https://lucid-clarke-3ee16f.netlify.app/portfolio"
+  status = 301
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
+  conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+  from = "/notepad"
+  to = "https://lucid-clarke-3ee16f.netlify.app/notepad"
   status = 301
   force = false
   query = {path = ":path"} #  apply this rule for /old-path?path=example

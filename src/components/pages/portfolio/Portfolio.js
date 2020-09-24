@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Main, Texts, Head4 } from '../../../Css'
+import styled from 'styled-components'
 
 class Portfolio extends Component {
     render() {

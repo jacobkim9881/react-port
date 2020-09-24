@@ -45,6 +45,7 @@ class SideBar extends Component {
      } else {
         this.setState({listClicked: false});
      }
+     console.log(this.state.listClicked)
     }
     render() {                      
         return (
@@ -54,7 +55,7 @@ class SideBar extends Component {
           
           {
           this.state.listClicked ? <StyledBtnGrpMob id="list"> 
-          <Ul>
+          <Ul onClick={this.handleMenu}>
           {/*Mapping list array to NavButton component of Routher Link */}            
           {arr.map(path => <NavButton link={path} />)}
         </Ul>

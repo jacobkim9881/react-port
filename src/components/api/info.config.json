@@ -5,5 +5,19 @@
     "Email": "mailto: jacobkim9881@gmail.com",
     "Instagram": "https://www.instagram.com/jacobkim116",
     "Twitter": "https://twitter.com/jacobkim9881",
-    "Etc": "https://blog.naver.com/kytcoca"
+    "Etc": "https://blog.naver.com/kytcoca",
+    "page": {
+        "about": {
+            "head": ["Who am I?", "자기소개"],
+            "body": [
+                "Career changed frontend developer who is attentive to English grammar with diagnostic mind as a Korean. I have organized coding habits with repeating tutorials at Freecodecamp. I am high skilled in HTML, CSS, Javascript and also some javascript libraries like React, Jquery. Working knowledge of Photoshop, Gimp, Illustrator. I have a passion for design.\n I am a good team player with various experiences and have fluent English language skills too. "
+                ,"프론트앤드 혹은 풀스택 개발자로 전직 준비 중입니다. 코딩부트캠프에서 튜토리얼을 반복하면서 깔끔한 코딩을 익혔습니다. \n HTML, CSS, Javascript에 익숙하고 React.JS와 jQuery와 같은 라이브러리도 습득했고 UI에 대한 열정이 있습니다. \n  항상 새로운 기술을 습득하려고 노력하고 영어 도큐멘터리를 읽는 것은 문제가 없습니다. 다양한 아르바이트 경험과 유통, 영업에 관한 경험을 쌓은 팀플레이어입니다.\n" 
+            ],
+            "resumeK" : ["Resume_Kor_ver", "한글 이력서"],
+            "resumeE" : ["Resume", "영문 이력서"],
+            "posts" : ["Posts", "쓴 글"],
+            "postAdd1" : ["Running node server with mysql on my smartphone", "안 쓰는 스마트폰에 노드 서버 작동하기(영문)"],
+            "postAdd2" : ["Hosting web server at cafe24(Getting a job in Korea)", "카페24에 MySQL 연동한 node 서버 구동하기(영문)"]
+        }
+    }
 }

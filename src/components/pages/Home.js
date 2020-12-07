@@ -50,8 +50,10 @@ const Profiles = styled.div`
 }
 `
 const Adress = styled.a`
+display: inline-block;
 padding-left: 1rem;
 padding-right: 1rem;
+padding-top: 1rem;
 color: hsl(0, 100%, 100%);
 `
 const Tag = styled.h2`

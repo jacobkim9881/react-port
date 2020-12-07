@@ -14,15 +14,15 @@ class NavButton extends Component {
         let restCharacters = this.props.link.slice(1);
         let ButtonName = firstCharacter.toUpperCase() + restCharacters;
         return (
-            <StyledButton>
               {/*This Link will get link from arr array which get mapping */}
               <StyledLink to={path()}>
+                <StyledButton>
                 {/*This is header of link. Default is Home */}
-                <StyledHeading>
-                  {this.props.link === ""? "Home" : ButtonName}
-                </StyledHeading>
+                  <StyledHeading>
+                    {this.props.link === ""? "Home" : ButtonName}
+                  </StyledHeading>
+       	        </StyledButton>
               </StyledLink>        
-            </StyledButton>
         );
     }
 }

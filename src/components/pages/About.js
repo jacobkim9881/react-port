@@ -25,7 +25,10 @@ class About extends Component {
                 <br/>
             <Head4>{info.page.about.posts[1]}</Head4>
             <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">{info.page.about.postAdd1[1]}</a><br />
-            <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >{info.page.about.postAdd2[1]}</a>                
+            <a href="https://dev.to/jacobkim9881/hosting-web-server-at-cafe24-getting-a-job-in-korea-f67" >{info.page.about.postAdd2[1]}</a> <br/>               
+            <a href="https://github.com/jacobkim9881/myexetensiontutorial" >{info.page.about.postAdd3[1]}</a> <br/>               
+            <a href="https://github.com/jacobkim9881/shoppingweb" >{info.page.about.postAdd4[1]}</a>                
+ 
                 </Texts>
             </Main>
         );

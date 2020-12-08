@@ -15,9 +15,11 @@
             ],
             "resumeK" : ["Resume_Kor_ver", "한글 이력서"],
             "resumeE" : ["Resume", "영문 이력서"],
-            "posts" : ["Posts", "쓴 글"],
+            "posts" : ["Posts", "쓴 글"],	    
             "postAdd1" : ["Running node server with mysql on my smartphone", "안 쓰는 스마트폰에 노드 서버 작동하기(영문)"],
-            "postAdd2" : ["Hosting web server at cafe24(Getting a job in Korea)", "카페24에 MySQL 연동한 node 서버 구동하기(영문)"]
+            "postAdd2" : ["Hosting web server at cafe24(Getting a job in Korea)", "카페24에 MySQL 연동한 node 서버 구동하기(영문)"],
+	    "postAdd3" : ["Chrome Extension tutorial", "크롬 익스텐션 가이드(영문)"],
+	    "postAdd4" : ["Login at React with nodejs and mysql", "Nodejs와 mysql로 서버 API 구축하기 및 리액트 쇼핑몰 프론트 앤드 페이지 만들기(영문)"]
         }
     }
 }

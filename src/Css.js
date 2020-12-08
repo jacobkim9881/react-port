@@ -4,7 +4,7 @@ export const Main = styled.div`
     position: relative;
     top: 0px;    
     margin: 30px auto;
-    background-color: hsla(0, 100%, 0%, 0.5);
+    background-color: hsla(0, 100%, 0%, 0.8);
     width: 1080px;
     text-indent: 50px;
 @media only screen and (max-width: 415px) {

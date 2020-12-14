@@ -15,14 +15,16 @@ class NavButton extends Component {
         let ButtonName = firstCharacter.toUpperCase() + restCharacters;
         return (
               /*This Link will get link from arr array which get mapping */
-              <StyledLink to={path()} tabindex={0}>
-                <StyledButton tabindex={-1} >
-                {/*This is header of link. Default is Home */}
-                  <StyledHeading>
-                    {this.props.link === ""? "Home" : ButtonName}
-                  </StyledHeading>
-       	        </StyledButton>
-              </StyledLink>        
+	     <StyledLi role={"menuitem"} aria-haspopup={"true"} >	
+		<StyledLink to={path()} tabindex={0}>
+                  <StyledButton tabindex={-1} >
+                  {/*This is header of link. Default is Home */}
+                    <StyledHeading>
+                      {this.props.link === ""? "Home" : ButtonName}
+                    </StyledHeading>
+       	          </StyledButton>
+                </StyledLink>        
+	     </StyledLi>
         );
     }
 }
@@ -31,6 +33,9 @@ export default NavButton;
 
 //after click
 //constants under here are for style sheet.
+const StyledLi = styled.li`
+display: inline-block;
+`
 const StyledButton = styled(Button)`
 width: 13.5rem;
 background-color: hsla(0, 100%, 0%, 0);

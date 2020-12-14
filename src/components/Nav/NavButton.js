@@ -15,8 +15,8 @@ class NavButton extends Component {
         let ButtonName = firstCharacter.toUpperCase() + restCharacters;
         return (
               /*This Link will get link from arr array which get mapping */
-              <StyledLink to={path()}>
-                <StyledButton>
+              <StyledLink to={path()} tabindex={0}>
+                <StyledButton tabindex={-1} >
                 {/*This is header of link. Default is Home */}
                   <StyledHeading>
                     {this.props.link === ""? "Home" : ButtonName}

@@ -18,7 +18,7 @@ export default function Home() {
             </Tag>
             <Profiles>
                 <center>
-                <Adress href={info.Linkedin}><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress tabindex={1} href={info.Linkedin}><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Github}><Github color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.FreeCodeCamp}><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Email}><Google color="hsl(0, 100%, 100%)" size={24}/></Adress>

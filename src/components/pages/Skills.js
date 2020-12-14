@@ -59,7 +59,7 @@ const StyledMain = styled(Main)`
     background-color: hsla(0,100%,0%,0);
 `
 const Card1 = styled.div`
-    background-color: hsla(0,100%,0%,0.5);
+    background-color: hsla(0,100%,0%,0.7);
     width: 48%;
     display: inline-block;
     border-radius: 0;
@@ -70,7 +70,7 @@ const Card1 = styled.div`
 }
 `
 const Card2 = styled.div`
-    background-color: hsla(0,100%,0%,0.5);
+    background-color: hsla(0,100%,0%,0.7);
     width: 98%;
     display: inline-block;
     border-radius: 0;

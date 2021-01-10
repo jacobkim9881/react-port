@@ -50,7 +50,7 @@ class SideBar extends Component {
     render() {                      
         return (
           <Main>
-          <Nav>
+          <Nav>	  
           <MobMenuBtn onClick={this.handleMenu}>Menu</MobMenuBtn>
           
           {
@@ -63,11 +63,11 @@ class SideBar extends Component {
           }          
 
         <StyledBtnGrp id="list"> 
-          <Ul>
+          <Ul role={"menubar"}>
           {/*Mapping list array to NavButton component of Routher Link */}            
           {arr.map(path => <NavButton link={path} />)}
         </Ul>
-        </StyledBtnGrp>
+        </StyledBtnGrp>	
         </Nav>
 
             {/*To add lists you SHOULD add a component in Route after adding list in the array */}

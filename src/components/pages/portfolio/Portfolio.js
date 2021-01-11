@@ -13,9 +13,11 @@ class Portfolio extends Component {
 <a href="https://ltmaker.netlify.app"> Lotto number maker
 </a><br />- 로또 번호를 자동, 반자동, 수동의 방식으로 뽑거나 로또 당첨 번호 통계를 확인할 수 있는 웹사이트입니다.<br />
                 <div>
+		    <a href="https://chrome.google.com/webstore/detail/mouse-footprint-tailing/bgmbliffojkhembdalfdgldpeihhpdnm?hl=ko">Customizing mouse pointer at Chrome extension app</a><br/> - CSS를 이용한 오브젝트가 마우스를 따라 상호작용하는 크롬 익스텐션입니다. <br/>
+
                     <a href="https://jacobkim9881.github.io/shoppingweb">Shopping mall portfolio</a><br/>
                     <a href="https://github.com/jacobkim9881/shoppingweb">Git page is here</a>
-                    <p>Functions <br />
+                    <p>
                     Frontend <br />
                     - Creating, editing ID by requesting with axios to node.js server<br />
                     - Listing clothes items by mapping from api server<br />

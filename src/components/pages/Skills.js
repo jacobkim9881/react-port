@@ -6,7 +6,7 @@ class Skills extends Component {
     render() {
         return (
             <StyledMain>
-                <Texts>
+                <TextsForSkills>
                 <Card2>
                 <Head5>Main Stacks </Head5>                
                 React :<br/> 
@@ -47,7 +47,7 @@ class Skills extends Component {
                 Excutable on OS : ElectronJS<br/>
                 ETC : Chrome Extensions <br/>
                 </Card1>
-                </Texts>
+                </TextsForSkills>
             </StyledMain>
         ); 
     }
@@ -76,4 +76,8 @@ const Card2 = styled.div`
     border-radius: 0;
     padding: 30px;
     margin: 1%;
+    margin-top: 0;
+`
+const TextsForSkills = styled(Texts)`
+padding: 0;
 `

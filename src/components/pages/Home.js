@@ -32,6 +32,8 @@ export default function Home() {
     );
 }
 const Header = styled.h1`
+font-family: Indie Flower;
+letter-spacing: 20px;
 font-size: 8rem;
 text-align: center;
 @media only screen and (max-width: 414px) {

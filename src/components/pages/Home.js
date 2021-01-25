@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-import { Linkedin, Github, Google, Freecodecamp, Instagram, Twitter } from '@icons-pack/react-simple-icons'
+import { Stackoverflow, Linkedin, Github, Google, Freecodecamp, Instagram, Twitter } from '@icons-pack/react-simple-icons'
 
 import { Main } from '../../Css'
 import info from '../api/info.config.json'
@@ -21,10 +21,11 @@ export default function Home() {
                 <Adress href={info.Linkedin}><Linkedin color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Github}><Github color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.FreeCodeCamp}><Freecodecamp color="hsl(0, 100%, 100%)" size={24}/></Adress>
-                <Adress href={info.Email}><Google color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Instagram}><Instagram color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Twitter}><Twitter color="hsl(0, 100%, 100%)" size={24}/></Adress>
+                <Adress href={info.Stackoverflow}><Stackoverflow color="hsl(0, 100%, 100%)" size={24}/></Adress>
                 <Adress href={info.Etc}>Blog</Adress>
+                <Adress href={info.Email}>E-mail</Adress>
                 </center>
             </Profiles>
             <br/><br/>

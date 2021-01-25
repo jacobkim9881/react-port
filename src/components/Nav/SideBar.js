@@ -45,7 +45,6 @@ class SideBar extends Component {
      } else {
         this.setState({listClicked: false});
      }
-     console.log(this.state.listClicked)
     }
     render() {                      
         return (
@@ -67,7 +66,7 @@ class SideBar extends Component {
           {/*Mapping list array to NavButton component of Routher Link */}            
           {arr.map(path => <NavButton link={path} />)}
         </Ul>
-        </StyledBtnGrp>	
+        </StyledBtnGrp>
         </Nav>
 
             {/*To add lists you SHOULD add a component in Route after adding list in the array */}

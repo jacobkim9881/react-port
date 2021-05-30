@@ -15,12 +15,35 @@
                 ,"프론트앤드 혹은 풀스택 개발자로 전직 준비 중입니다. 코딩부트캠프에서 튜토리얼을 반복하면서 깔끔한 코딩을 익혔습니다. \n HTML, CSS, Javascript에 익숙하고 React.JS와 jQuery와 같은 라이브러리도 습득했고 UI에 대한 열정이 있습니다. \n  항상 새로운 기술을 습득하려고 노력하고 영어 도큐멘터리를 읽는 것은 문제가 없습니다. 다양한 아르바이트 경험과 유통, 영업에 관한 경험을 쌓은 팀플레이어입니다.\n" 
             ],
             "resumeK" : ["Resume_Kor_ver", "한글 이력서"],
+	    "resumeKUrl" : ["https://drive.google.com/file/d/1Mh1jD8tuZIEjxezwNX-zKWRLa-EkGKow/view?usp=sharing"],
             "resumeE" : ["Resume", "영문 이력서"],
+	    "resumeUrl" : ["https://drive.google.com/open?id=1ReWE2tDjrsK7KGqWrx42bIQ2euKdo8ih1EkRIfyPFXg"],
             "posts" : ["Posts", "쓴 글"],	    
             "postAdd1" : ["Running node server with mysql on my smartphone", "안 쓰는 스마트폰에 노드 서버 작동하기(영문)"],
             "postAdd2" : ["Hosting web server at cafe24(Getting a job in Korea)", "카페24에 MySQL 연동한 node 서버 구동하기(영문)"],
 	    "postAdd3" : ["Chrome Extension tutorial", "크롬 익스텐션 가이드(영문)"],
 	    "postAdd4" : ["Login at React with nodejs and mysql", "Nodejs와 mysql로 서버 API 구축하기 및 리액트 쇼핑몰 프론트 앤드 페이지 만들기(영문)"]
+	},
+    "portfolio": { 
+	    "pfolioAdd1" : ["Random Famous Ailens' Quotes Maker", "API를 이용한 랜덤 명언"],
+	    "pfolioAdd1X" : ["This is a frontend webpage which loads quotes from API server", "API 서버에 있는 격언 중의 하나를 랜덤하게 불러오는 클라이언트 웹페이지입니다."],
+	    "pfolioAdd2" : ["Lotto number maker", "로또 번호 추첨기"],
+	    "pfolioAdd2X" : ["It gives you lotto numbers which algorithms makes randomly or you can put your number and other number which algorithms makes.", "로또 번호를 자동, 반자동, 수동의 방식으로 뽑거나 로또 당첨 번호 통계를 확인할 수 있는 웹사이트입니다."], 
+	    "pfolioAdd3" : ["Customizing mouse pointer at Chrome extension app", "마우스 커서를 특별하게 꾸며주는 크롬 확장앱"],
+	    "pfolioAdd3X" : ["This extension add CSS elements to your mouse cursor which shows pretty and cool elements next to your mouse cursor", "CSS를 이용한 오브젝트가 마우스를 따라 상호작용하는 크롬 익스텐션입니다."],
+	    "pfolioAdd4" : ["Shopping mall website", "쇼핑몰 웹사이트"],
+	    "pfolioAdd4X1" : ["Creating, editing ID by requesting with axios to node.js server", "사용자 계정을 만들거나 편집하는 등의 요청을 API 서버에 보냅니다."],
+	    "pfolioAdd4X2" : ["Listing clothes items by mapping from api server", "API 서버에서 상품 목록을 요청한 배열을 맵핑하여 페이지에 뿌려줍니다."],
+	    "pfolioAdd4X3" : ["Admin page which you can add or delete clothes items on the list", "상품 목록에서 새로운 상품을 더하거나 목록의 상품을 지울 수 있는 관리자 페이지"],
+	    "pfolioAdd4X4" : ["Get, post put request for user id from frontend page", "프론트엔드 페이지로부터 요청을 받아 GET, POST 등을 수행합니다."],
+	    "pfolioAdd4X5" : ["Excuting queries from get request", "DB를 불러와 쿼리 작업을 수행합니다."],
+	    "pfolioAdd5" : ["Portfolio demonstration video lists", "코딩한 포트폴리오 재생목록"],
+	    "pfolioAdd5X" : ["A list which shows demonstration videos I have coded", "코딩한 포트폴리오들을 모아놓은 재생목록입니다."],
+	    "pfolioAdd6" : ["YouTube: Shopping mall", "쇼핑몰 유튜브 비디오"],
+	    "pfolioAdd6X" : ["Demonstration video which shows how to upload a product post", "쇼핑몰에서 제품 판매포스트를 업로드하는 방법 시연 영상"],
+	    "pfolioAdd7" : ["Solar system drawn by canvas of JS", "HTML canvas로 그려본 태양계"],
+	    "pfolioAdd7X" : ["This video shows how solar system works on HTML canvas", "태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다."]
+
         }
     }
 }

@@ -20,8 +20,8 @@ class About extends Component {
                 Security guard at a bank(2016.08 - 2016.10) <br/>
                 Part time job for taking stocks(2016.03 - 2016.06) <br/>
                 */}
-                <a href="https://drive.google.com/file/d/1OuT9RPwgN3LemVK0iZNAf7HDwxfg4fLd/view?usp=sharing">{info.page.about.resumeK[1]}</a><br/>
-            <a href="https://drive.google.com/open?id=1ReWE2tDjrsK7KGqWrx42bIQ2euKdo8ih1EkRIfyPFXg">{info.page.about.resumeE[1]}</a><br/>
+                <a href={info.page.about.resumeKUrl}>{info.page.about.resumeK[1]}</a><br/>
+            <a href={info.page.about.resumeUrl}>{info.page.about.resumeE[1]}</a><br/>
                 <br/>
             <Head4>{info.page.about.posts[1]}</Head4>
             <a href="https://dev.to/jacobkim9881/running-node-server-with-mysql-on-my-smartphone-1eb3">{info.page.about.postAdd1[1]}</a><br />

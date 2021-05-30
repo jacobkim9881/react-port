@@ -9,43 +9,31 @@ class Skills extends Component {
                 <TextsForSkills>
                 <Card2>
                 <Head5>Main Stacks </Head5>                
-                React :<br/> 
-                    -Axios<br/>   
-                    -styled-component<br/>    
-                    -React-route<br/> 
                 HTML<br/> 
                 CSS<br/>                 
                 Javascript<br/> 
-                Node.js :<br/> 
-                    - express<br/> 
-                        * session <br/>
-                        * router <br/>                 
-                        * express-generator<br/>                         
-                    - mysql<br/>                     
-                    - cors<br/> 
-                    - sequelize<br/>
-                    - helmet <br/>                        
+		ES6<br/>
+                React.JS <br/> 
+                Node.JS <br/> 
+                express.JS<br/> 
                 MySQL<br/>
+                PostgreSQL<br/>
                 </Card2>
                 <Card1>
                     <Head5>Development Environment</Head5>                
                 OS: Linux Mint <br/>
-                IDE: Vs Code <br/>
-                Package Manager : npm <br/>                
-                How to update this website : Git <br/>
-                Deployed at : Netlify <br/>
+                IDE: Vs Code, Vim <br/>
+                <br/>
                 <br/>
                 <br/>
                 </Card1>
                 <Card1>
                 <Head5>I also can do...</Head5>
-                Vim<br/> 
                 Java<br/> 
                 JSP<br/> 
                 jQuery<br/> 
                 Eclipse<br/> 
-                Excutable on OS : ElectronJS<br/>
-                ETC : Chrome Extensions <br/>
+                ETC : Chrome Extensions, Google Apps Script, Electron.JS <br/>
                 </Card1>
                 </TextsForSkills>
             </StyledMain>

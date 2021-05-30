@@ -16,8 +16,8 @@ class NavButton extends Component {
         return (
               /*This Link will get link from arr array which get mapping */
 	     <StyledLi role={"menuitem"} aria-haspopup={"true"} >	
-		<StyledLink to={path()} tabindex={0}>
-                  <StyledButton tabindex={-1} >
+		<StyledLink to={path()} tabIndex={0}>
+                  <StyledButton tabIndex={-1} >
                   {/*This is header of link. Default is Home */}
                     <StyledHeading>
                       {this.props.link === ""? "Home" : ButtonName}
@@ -37,7 +37,7 @@ const StyledLi = styled.li`
 display: inline-block;
 `
 const StyledButton = styled(Button)`
-width: 13.5rem;
+width: 12.5rem;
 background-color: hsla(0, 100%, 0%, 0);
 border-color: hsla(0, 100%, 100%, 0);
 border-radius: 0px;

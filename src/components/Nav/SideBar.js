@@ -7,6 +7,7 @@ import styled from 'styled-components'
 
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import NavButton from './NavButton'
+import Nation from './Nation'
 
 import Home from '../pages/Home'
 import About from '../pages/About'
@@ -56,7 +57,7 @@ class SideBar extends Component {
           this.state.listClicked ? <StyledBtnGrpMob id="list"> 
           <Ul onClick={this.handleMenu}>
           {/*Mapping list array to NavButton component of Routher Link */}            
-          {arr.map(path => <NavButton link={path} />)}
+          {arr.map((path, idx) => <NavButton key={idx} link={path} />)}
         </Ul>
         </StyledBtnGrpMob> : ''
           }          
@@ -64,7 +65,8 @@ class SideBar extends Component {
         <StyledBtnGrp id="list"> 
           <Ul role={"menubar"}>
           {/*Mapping list array to NavButton component of Routher Link */}            
-          {arr.map(path => <NavButton link={path} />)}
+          {arr.map((path, idx) => <NavButton key={idx} link={path} />)}
+	<Nation />
         </Ul>
         </StyledBtnGrp>
         </Nav>

@@ -6,6 +6,7 @@
     "@icons-pack/react-simple-icons": "^3.13.0",
     "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
+    "eslint": "^7.28.0",
     "fibers": "^5.0.0",
     "jquery": "^3.5.1",
     "netlify-cli": "^2.71.0",
@@ -15,7 +16,7 @@
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.4",
+    "react-scripts": "4.0.3",
     "redux": "^4.0.5",
     "sass": "^1.32.4",
     "styled-components": "^5.2.1"

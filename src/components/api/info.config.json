@@ -42,7 +42,9 @@
 	    "pfolioAdd6" : ["YouTube: Shopping mall", "쇼핑몰 유튜브 비디오"],
 	    "pfolioAdd6X" : ["Demonstration video which shows how to upload a product post", "쇼핑몰에서 제품 판매포스트를 업로드하는 방법 시연 영상"],
 	    "pfolioAdd7" : ["Solar system drawn by canvas of JS", "HTML canvas로 그려본 태양계"],
-	    "pfolioAdd7X" : ["This video shows how solar system works on HTML canvas", "태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다."]
+	    "pfolioAdd7X" : ["This video shows how solar system works on HTML canvas", "태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다."],
+	    "pfolioAdd8" : ["Board Swiper", "Board Swiper(게시판 다음글 이전글 쉽게 가기)"],
+	    "pfolioAdd8X" : ["This chrome extension helps users to move previous page or next page by holding left mouse button + drag mouse + releasing the mouse button.", "게시판의 현재 글에서 마우스 왼쪽 버튼을 누른 상태에서 좌, 우로 드래그하면 다음 글, 이전 글로 이동하게 하는 확장앱입니다. 카페 유머 게시판이나 커뮤니티 유머 게시판에서 사용하는 확장앱입니다."]
 
         }
     }

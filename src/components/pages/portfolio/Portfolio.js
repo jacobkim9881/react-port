@@ -27,8 +27,13 @@ class Portfolio extends Component {
 		{info.page.portfolio.pfolioAdd3[idx]}
 		</a><br/>
 		- {info.page.portfolio.pfolioAdd3X[idx]}
-		<br/>
-		<br/>
+	        <br />
+		    <a href="https://chrome.google.com/webstore/detail/board-swiper/ioodddoeonpefhnbpmfepmpipldkbcln">
+		{info.page.portfolio.pfolioAdd8[idx]}
+		</a><br/>
+		- {info.page.portfolio.pfolioAdd8X[idx]}
+	       <br/>
+               <br/>
 
                     <a href="https://jacobkim9881.github.io/shoppingweb">
 		{info.page.portfolio.pfolioAdd4[idx]}

@@ -33,7 +33,12 @@ class Portfolio extends Component {
 		</a><br/>
 		- {info.page.portfolio.pfolioAdd8X[idx]}
 	       <br/>
-               <br/>
+ 		    <a href="https://twitter.com/SeoulOlympic88">
+		{info.page.portfolio.pfolioAdd9[idx]}
+		</a><br/>
+		- {info.page.portfolio.pfolioAdd9X[idx]}
+              <br/>
+              <br/>
 
                     <a href="https://jacobkim9881.github.io/shoppingweb">
 		{info.page.portfolio.pfolioAdd4[idx]}

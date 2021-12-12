@@ -15,7 +15,7 @@
                 ,"프론트앤드 혹은 풀스택 개발자로 전직 준비 중입니다. 코딩부트캠프에서 튜토리얼을 반복하면서 깔끔한 코딩을 익혔습니다. \n HTML, CSS, Javascript에 익숙하고 React.JS와 jQuery와 같은 라이브러리도 습득했고 UI에 대한 열정이 있습니다. \n  항상 새로운 기술을 습득하려고 노력하고 영어 도큐멘터리를 읽는 것은 문제가 없습니다. 다양한 아르바이트 경험과 유통, 영업에 관한 경험을 쌓은 팀플레이어입니다.\n" 
             ],
             "resumeK" : ["Resume_Kor_ver", "한글 이력서"],
-	    "resumeKUrl" : ["https://drive.google.com/file/d/17eOR83U9OulmURooY7NP9tKJJ2UTp3AZ/view?usp=sharing"],
+	    "resumeKUrl" : ["https://drive.google.com/file/d/1agtYodTBPByuBHqc9O-hfM8VyGZ0YOXN/view?usp=sharing"],
             "resumeE" : ["Resume", "영문 이력서"],
 	    "resumeUrl" : ["https://drive.google.com/open?id=1ReWE2tDjrsK7KGqWrx42bIQ2euKdo8ih1EkRIfyPFXg"],
             "posts" : ["Posts", "쓴 글"],	    
@@ -44,7 +44,10 @@
 	    "pfolioAdd7" : ["Solar system drawn by canvas of JS", "HTML canvas로 그려본 태양계"],
 	    "pfolioAdd7X" : ["This video shows how solar system works on HTML canvas", "태양계의 행성들이 공전하는 모습을 Javascript canvas로 그려보았습니다."],
 	    "pfolioAdd8" : ["Board Swiper", "Board Swiper(게시판 다음글 이전글 쉽게 가기)"],
-	    "pfolioAdd8X" : ["This chrome extension helps users to move previous page or next page by holding left mouse button + drag mouse + releasing the mouse button.", "게시판의 현재 글에서 마우스 왼쪽 버튼을 누른 상태에서 좌, 우로 드래그하면 다음 글, 이전 글로 이동하게 하는 확장앱입니다. 카페 유머 게시판이나 커뮤니티 유머 게시판에서 사용하는 확장앱입니다."]
+	    "pfolioAdd8X" : ["This chrome extension helps users to move previous page or next page by holding left mouse button + drag mouse + releasing the mouse button.", "게시판의 현재 글에서 마우스 왼쪽 버튼을 누른 상태에서 좌, 우로 드래그하면 다음 글, 이전 글로 이동하게 하는 확장앱입니다. 카페 유머 게시판이나 커뮤니티 유머 게시판에서 사용하는 확장앱입니다."],
+	    "pfolioAdd9" : ["88 Seoul Olympic twitter bot", "88 서울 올림픽 트위터 봇"],
+	    "pfolioAdd9X" : ["This twitter account is tweeting for a day by AWS lambda, twitter API for tweeting photos about 88 Olympic's subjects.", "이 트위터 계정이 하루에 한번 하는 트윗은 AWS lambda function과 twitter API, 88 올림픽 사진 API를 이용하여 실행됩니다."]
+
 
         }
     }

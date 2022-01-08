@@ -33,7 +33,7 @@ class Skills extends Component {
                 JSP<br/> 
                 jQuery<br/> 
                 Eclipse<br/> 
-                ETC : Chrome Extensions, Google Apps Script, Electron.JS <br/>
+                ETC : Chrome Extensions, Google Apps Script, Electron.JS, AWS Lambda <br/>
                 </Card1>
                 </TextsForSkills>
             </StyledMain>
